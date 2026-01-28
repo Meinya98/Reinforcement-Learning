@@ -7,15 +7,16 @@ The agent's observation space consist of a state vector with 8 variables:
 3. Angle _θ_.
 4. Angular velocity _θdot_.
 5. Booleans to represent whether each leg is in contact with the ground or not (_l_ and _r_).
-\
+
+
 Each action taken by the agent has a corresponding value:
 1. Do nothing = 0
 2. Fire right engine = 1
 3. Fire main engine = 2
 4. Fire left engine = 3
-\
-After every step, a reward is granted for the agent. The total reward of an episode is the sum for all the steps within that episode (already stated within the environment):
 
+
+After every step, a reward is granted for the agent. The total reward of an episode is the sum for all the steps within that episode (already stated within the environment):
 1. +100 for landing safely.
 2. -100 for crashing.
 3. -0.3 for each frame the main engine is firing.
